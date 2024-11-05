@@ -1,0 +1,21 @@
+meta {
+  name: join
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{url}}/groups/01JBZ7J8603H71PY0CCABX862G/join
+  body: json
+  auth: none
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+  Authorization: {{token}}
+}
+
+body:json {
+  { "name": "Grupo 11", "githubUsername": "rpinoga" }
+}

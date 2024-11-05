@@ -1,0 +1,16 @@
+meta {
+  name: groups
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{url}}/groups
+  body: none
+  auth: none
+}
+
+headers {
+  accept: application/json
+  Authorization: {{token}}
+}

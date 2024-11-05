@@ -1,0 +1,21 @@
+meta {
+  name: group
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/groups
+  body: json
+  auth: none
+}
+
+headers {
+  accept: application/json
+  Content-Type: application/json
+  Authorization: {{token}}
+}
+
+body:json {
+  { "name": "Grupo 11" }
+}

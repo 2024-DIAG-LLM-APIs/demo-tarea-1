@@ -1,0 +1,29 @@
+meta {
+  name: token
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url}}/token?email=inf.rpino%40gmail.com
+  body: none
+  auth: bearer
+}
+
+params:query {
+  email: inf.rpino@gmail.com
+}
+
+headers {
+  accept: application/json
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImluZi5ycGlub0BnbWFpbC5jb20iLCJpYXQiOjE3MzA4NDcyMzUsImV4cCI6MTczMDg1MDgzNX0.hjV3yWyYp2CdnPiKt_ccdOEptBHvvxXMyOnZgeUJZW4
+}
+
+body:json {
+  {
+    "email" : "inf.rpino@gmail.com"
+  }
+}
